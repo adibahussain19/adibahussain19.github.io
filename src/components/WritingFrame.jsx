@@ -1,12 +1,12 @@
 
-export default function WritingFrame({name, text, fullButton}) {
+export default function WritingFrame({name, text, children}) {
     return(
         <div className="writing-frame">
             <h3>{name}</h3>
             <p>{text}</p>
 
             <div className="button-div">
-                {fullButton}
+                {children}
             </div>
 
         </div>
