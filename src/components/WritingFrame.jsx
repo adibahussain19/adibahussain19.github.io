@@ -8,10 +8,6 @@ export default function WritingFrame({name, text, children}) {
             <div className="button-div">
                 {children}
             </div>
-
         </div>
-
-        
-
     )    
 }
