@@ -7,18 +7,16 @@ export default function Writing(){
 
             <div id="writing-intro">
                 <p>In addition to my technical side, expressing my creativity through writing has always intrigued me. <br /> 
-                    <br />
                     As a first generation American, I fell in love with writing and the power words hold. 
                     I aspire to be able to tell my story through different mediums and platforms and share 
-                    my experiences to others. <br />
-                    <br />
-                    Here are a few writing samples: 
+                    my experiences to others.
                 </p>
+                <p>Here are a few writing samples: </p>
             </div>
 
             <div id="frame-div">
                 <WritingFrame   name="Mirrored Language in Shakespeare’s The Rape of Lucrece"
-                                text="<u>Summary:<u> For my final college thesis paper, I explore 
+                                text="Summary: For my final college thesis paper, I explore 
                                 the rhetorical technique of the parallel usage of words, 
                                 phrases, and images between Tarquin in the first half of the 
                                 poem and Lucrece in the latter half, to show how Lucrece is 
@@ -52,6 +50,12 @@ export default function Writing(){
                                 immigrant household, college was the expectation from my parents.”">
                                 <button>Read Full Story</button>
                 </WritingFrame>  
+            </div>
+
+            <div className="readMore">
+                <button>Read More Samples <svg xmlns="http://www.w3.org/2000/svg" width="12" height="30" viewBox="0 0 12 30" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.157 15.8887L4.5 22.96L3.086 21.1925L8.036 15.005L3.086 8.81749L4.5 7.04999L10.157 14.1212C10.3445 14.3556 10.4498 14.6735 10.4498 15.005C10.4498 15.3364 10.3445 15.6543 10.157 15.8887Z" fill="#4D5566"/>
+</svg> </button>
             </div>
     </section>
     )
