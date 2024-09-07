@@ -14,7 +14,7 @@ export default function Header(){
 
 
     return(
-        <header className="title-section light-background" id="#home">
+        <header className="title-section light-background" id="#top">
             <MyNavbar/>
                 <div className="title-content">
                     <p>👋 Hello All</p>

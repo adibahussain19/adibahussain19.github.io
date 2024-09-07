@@ -24,6 +24,8 @@ section{
   width: 1266px;
   height: 700px;
   padding-bottom: 5%;
+  padding-top: 80px;
+  /* margin-top: -80px; */
 }
 
 #body{
@@ -47,6 +49,24 @@ section{
 
 #navbar-edit a {
   color: #594F43;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #4E5E80;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .nav-link:hover,
+.navbar-scrolled .nav-link:focus {
+  color: #FFDDBF !important; 
+}
+
+.navbar .nav-link{
+  transition: color 0.3s ease;
 }
 
 .title-section {
@@ -139,7 +159,7 @@ section{
   display: flex;
   /* width: 1366px;
   height: 700px; */
-  padding: 0px 120px;
+  /* padding: 0px 120px; */
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
@@ -461,10 +481,9 @@ p {
 
   #contact{
     display: flex;
-    /* width: 1366px;
-    height: 700px; */
-    padding: 64px 8px;
+    padding: 180px 8px;
     flex-direction: column;
+    height: 800px;
   }
 
   .contact-div{
