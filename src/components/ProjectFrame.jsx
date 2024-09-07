@@ -1,3 +1,4 @@
+import "./Projects.css";
 
 export default function ProjectFrame({name, text, image, children}) {
     return(
@@ -8,7 +9,7 @@ export default function ProjectFrame({name, text, image, children}) {
                 {children}
             </div>
         
-            <div className="img-div">
+            <div className="project-img-div">
                 <img src={image} alt={name} className="project-img"/>
             </div>
         </div>

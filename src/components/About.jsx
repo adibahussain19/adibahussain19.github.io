@@ -1,4 +1,5 @@
 import headshotImg from "../assets/headshot.jpg";
+import "./About.css";
 
 export default function About() {
     return (
@@ -7,7 +8,7 @@ export default function About() {
         <div className="about-div">
             <div id="img-div"><img className="title-image" src={headshotImg} alt="A Picture of Adiba Hussain" /></div>
             
-            <div className="content-container">
+            <div className="about-content-container">
                 <h1 className="section-heading"> A Little Bit About Me </h1>
 
                 <p>
@@ -25,7 +26,7 @@ export default function About() {
                     exploring new restaurants and places in NYC. 
                 </p>
 
-                <button className="bordered-button">Contact Me</button>
+                <button className="about-bordered-button"><a href="#contact">Contact Me</a></button>
             </div>
         </div>
         

@@ -1,3 +1,4 @@
+import "./Writing.css";
 
 export default function WritingFrame({name, text, children}) {
     return(

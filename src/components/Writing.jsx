@@ -1,4 +1,5 @@
-import WritingFrame from "./WritingFrame.jsx"
+import WritingFrame from "./WritingFrame.jsx";
+import "./Writing.css";
 
 export default function Writing(){
     return(
@@ -12,7 +13,7 @@ export default function Writing(){
                 <p>Here are a few writing samples: </p>
             </div>
 
-            <div id="frame-div">
+            <div id="writing-frame-div">
                 <WritingFrame   name="Mirrored Language in Shakespeare’s The Rape of Lucrece"
                                 text="Summary: For my final college thesis paper, I explore 
                                 the rhetorical technique of the parallel usage of words, 

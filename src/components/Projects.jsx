@@ -1,4 +1,5 @@
 import ProjectFrame from "./ProjectFrame.jsx";
+import "./Projects.css";
 import csBridgeImg from "../assets/CSBRIDGE.png";
 import pageTunesImg from "../assets/pagetunes.png"
 
