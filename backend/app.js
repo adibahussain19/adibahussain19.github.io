@@ -2,9 +2,8 @@ const express = require('express');
 const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
-
-// const eventRoutes = require('./routes/events');
-// const authRoutes = require('./routes/auth');
+const writingRoutes = require("./routes/writingRoutes");
+const projectRoutes = require("./routes/projectRoutes");
 
 dotenv.config();
 
@@ -36,8 +35,8 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-// app.use('/auth', authRoutes); // Adding base path '/auth' for auth routes
-// app.use('/events', eventRoutes); // '/events' for event routes
+app.use("/writing", writingRoutes);
+app.use("/projects", projectRoutes);
 
 // Error handling middleware
 app.use((error, req, res, next) => {
