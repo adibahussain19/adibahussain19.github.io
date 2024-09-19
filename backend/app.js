@@ -8,26 +8,32 @@ const projectRoutes = require("./routes/projectRoutes");
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-const MONGO_URI = process.env.MONGO_URI.replace('${DB_PASSWORD}', process.env.DB_PASSWORD);
-
+// Construct MongoDB URI
+const MONGO_URI = process.env.MONGO_URI.replace('${DB_PASSWORD}', encodeURIComponent(process.env.DB_PASSWORD));
 
 // MongoDB connection
 mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-//   mongoose.connect(MONGO_URI, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//     .then(() => console.log("MongoDB connected"))
-//     .catch((err) => console.error("MongoDB connection error:", err));
+// Listen for MongoDB connection events
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose connected to MongoDB.');
+});
+
+mongoose.connection.on('error', (err) => {
+  console.error(`Mongoose connection error: ${err}`);
+});
+
+mongoose.connection.on('disconnected', () => {
+  console.log('Mongoose disconnected from MongoDB.');
+});
 
 // Sample route
 app.get("/", (req, res) => {

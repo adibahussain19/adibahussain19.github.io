@@ -4,8 +4,6 @@ import Header from "./components/Header.jsx";
 import Projects from "./components/Projects.jsx";
 import Writing from "./components/Writing.jsx";
 
-//testing
-
 function App() {
     return (
       <>
