@@ -7,8 +7,8 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
     try {
-      const writingItems = await Writing.find();
-      res.json(writingItems);
+      const writingItem = await Writing.find();
+      res.json(writingItem);
     } catch (err) {
       res.status(500).json({ message: err.message });
     }

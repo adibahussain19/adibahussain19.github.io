@@ -1,22 +1,23 @@
-import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Header from "./components/Header.jsx";
-import Projects from "./components/Projects.jsx";
-import Writing from "./components/Writing.jsx";
+import HomePage from "./components/HomePage.jsx";
+import WritingPage from "./components/WritingPage.jsx";
+import ProjectsPage from "./components/WritingPage.jsx";
+
+const router = createBrowserRouter([
+  {path: '/', element: (<>
+    <div id="body">
+          <Header/>
+          <HomePage/>
+    </div>
+  </>)},
+  {path: '/projects', element: <ProjectsPage/>},
+  {path: '/writing', element: <WritingPage/>}
+]);
 
 function App() {
     return (
-      <>
-        <div id="body">
-                <Header/>
-                <main>
-                    <About />
-                    <Projects />
-                    <Writing/>
-                    <Contact/>
-                </main>
-        </div>
-      </>
+      <RouterProvider router={router}/>
     );
 }
 

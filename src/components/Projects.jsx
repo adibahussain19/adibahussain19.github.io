@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectFrame from "./ProjectFrame.jsx";
 import "./Projects.css";
 import csBridgeImg from "../assets/CSBRIDGE.png";
@@ -23,9 +24,7 @@ export default function Projects() {
                         > <a href="/allProjects">View Project</a>
         </ProjectFrame>
 
-        <button>More Projects</button>
-
-                      
-
+        <Link to='/projects'><button>More Projects</button></Link>
+        
     </section>)
 }
