@@ -1,15 +1,21 @@
 const express = require("express");
 const Project = require("../models/Project.js");
 
+
 const router = express.Router();
+
+console.log("Project routes loaded");
 
 //GET
 
 router.get("/", async (req, res) => {
     try {
+      console.log("Fetching projects...");
       const Projects = await Project.find();
+      console.log("Projects fetched:", Projects);
       res.json(Projects);
-    } catch (err) {
+    } catch (err) { 
+      console.error("Error fetching projects:", err);
       res.status(500).json({ message: err.message });
     }
 });
