@@ -6,6 +6,3 @@ dist-ssr
 
 # Environment variables
 .env
-
-package-lock.json
-package.json
