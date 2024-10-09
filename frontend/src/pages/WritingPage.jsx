@@ -1,3 +1,4 @@
+import "./stylesheets/ProjectsPage.css";
 import useFetchWriting from '../hooks/useFetchWriting';
 
 export default function WritingPage() {
@@ -7,13 +8,14 @@ export default function WritingPage() {
     if (error) return <p>Error: {error.message}</p>;
 
     return (
-        <div>
-            <h1>Writing Samples</h1>
+        <div className="projectsPage-div">
+            <h1 className="section-heading">Writing Samples</h1>
             {writings.map((writing, index) => (
                 <div key={index} className="writing-item">
-                    <h2>{writing.title}</h2>
-                    <p>{writing.summary}</p>
+                    <h2 className="project-heading" >{writing.title}</h2>
+                    <p className="projectsPage-text" >{writing.summary}</p>
                     <a href={writing.fileLink}>Read More</a>
+                    <hr />
                 </div>
             ))}
         </div>

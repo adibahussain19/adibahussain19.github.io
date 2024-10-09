@@ -13,15 +13,16 @@ export default function Projects() {
                         text="With AI-powered playlist creation and a vibrant community, 
                         readers can dive into personalized playlists, 
                         taking their reading experience to the next level!"
-                        image={pageTunesImg}> <a href="/allProjects">View Project</a>
+                        image={pageTunesImg}> 
+                        <Link to='/projects'>View Project</Link>
         </ProjectFrame>
 
         <ProjectFrame   name="CS Bridge" 
                         text="Developed a computer science curriculum specifically 
                         designed for high school students in the New York City 
                         public school system." 
-                        image={csBridgeImg}
-                        > <a href="/allProjects">View Project</a>
+                        image={csBridgeImg}>
+                        <Link to='/projects'>View Project</Link>
         </ProjectFrame>
 
         <Link to='/projects'><button>More Projects</button></Link>

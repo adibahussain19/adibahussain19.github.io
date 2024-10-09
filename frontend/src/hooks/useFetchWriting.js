@@ -6,11 +6,9 @@ export default function useFetchWriting(){
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        console.log("Fetching writing samples from the server...");
         fetch('http://localhost:5001/writing')
             .then(response => response.json())
             .then(data => {
-                console.log("Writing sample data received:", data);
                 setWritings(data);
                 setLoading(false);
             })

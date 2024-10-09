@@ -24,7 +24,8 @@ export default function Writing(){
                                 poem and Lucrece in the latter half, to show how Lucrece is 
                                 an author of her own history, in that her mirrored language both 
                                 laments a loss of power as well as reclaims this power.">
-                                <button>Read Full Story</button>
+                                <Link to="https://docs.google.com/document/d/1KC-zJf4nz_8f2mnvybnqLqbLT6RsM86FI7ry_WYFZ8Q/edit?usp=sharing"><button>Read Full Story</button></Link>
+                                
                 </WritingFrame> 
 
                 <WritingFrame   name="Explosion"
@@ -32,7 +33,7 @@ export default function Writing(){
                                 ‘You wanna come and check?’ What if I had actually said that to the 
                                 guy on the empty train who uttered those words while I was minding 
                                 my business trying to get to my first period Earth Science class?”">
-                                <button>Read Full Story</button>
+                                <Link to="https://drive.google.com/file/d/1XHMvP3MrY0XYsikBlQDjQb87ws2OTyFt/view"><button>Read Full Story</button></Link>
                 </WritingFrame> 
 
                 <WritingFrame   name="Sinking"
@@ -41,7 +42,7 @@ export default function Writing(){
                                         My hands clung to the makeshift floaty that my family
                                         had made to help me learn how to swim. Empty water gallons tied to a rope and attached to my
                                         waist were to be my saviors, my entire lifeline....">
-                                <button>Read Full Story</button>
+                                <Link to="https://drive.google.com/file/d/1lMOuAGRbKq25XH27zpO43l5yOFaYLNmr/view"><button>Read Full Story</button></Link>
                 </WritingFrame>
 
                 <WritingFrame   name="From the Bold. Beautiful. Barnard Blog"
@@ -50,7 +51,7 @@ export default function Writing(){
                                 everything I had done in high school had built up to the moment where 
                                 I would actually start my application and submit it. Coming from an 
                                 immigrant household, college was the expectation from my parents.”">
-                                <button>Read Full Story</button>
+                                <Link to="https://www.boldbeautifulbarnard.com/unafraid-at-barnard/2020/3/30/why-i-chose-barnard"><button>Read Full Story</button></Link>
                 </WritingFrame>  
             </div>
 
