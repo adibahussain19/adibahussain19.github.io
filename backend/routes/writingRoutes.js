@@ -3,18 +3,14 @@ const Writing = require("../models/Writing.js");
 
 const router = express.Router();
 
-console.log("Writing routes loaded");
 
 //GET
 
 router.get("/", async (req, res) => {
     try {
-      console.log("Fetching writing samples...");
       const writingItem = await Writing.find();
-      console.log("Writing samples fetched:", writingItem);
       res.json(writingItem);
     } catch (err) {
-      console.error("Error fetching writing samples:", err);
       res.status(500).json({ message: err.message });
     }
 });
