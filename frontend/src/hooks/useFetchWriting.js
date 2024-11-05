@@ -4,6 +4,8 @@ export default function useFetchWriting(){
     const [writings, setWritings] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+   
+    console.log("process.env", process.env);
     const apiUrl = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
